@@ -1,0 +1,259 @@
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            background-color: #FFFAF0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        p {
+            margin: 0;
+        }
+        
+        h2 {
+            margin: 0;
+        }
+        /* ここからヘッダー部分*/
+        
+        header {
+            padding: 60px 0;
+            height: 65px;
+            width: 100%;
+            background-color: white;
+        }
+        
+        .header-right {
+            float: right;
+            font-size: 25px;
+            margin-right: 75px;
+        }
+        
+        .header-right a {
+            line-height: 75px;
+            margin-top: -30px;
+            padding: 0 25px;
+            color: black;
+            display: block;
+            float: left;
+            transition: all 0.5s;
+        }
+        
+        .header-right a:hover {
+            background-color: rgba(9, 43, 236, 0.3);
+        }
+        
+        .menu-icon {
+            display: none;
+        }
+        /* ここまでヘッダー*/
+        /* オープニングシャッター*/
+        
+        .top-op,
+        .top-op2 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin: 0 auto;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .top-op {
+            z-index: 99;
+            background: #f2f2f2;
+            animation-duration: 1.2s;
+            animation-delay: 1.4s;
+            animation-fill-mode: forwards;
+            animation-name: top-op;
+        }
+        
+        .top-op2 {
+            z-index: 100;
+            background: #e2e2e2;
+            animation-duration: 0.7s;
+            animation-delay: 0.6s;
+            animation-fill-mode: forwards;
+            animation-name: top-op2;
+        }
+        
+        @keyframes top-op {
+            0% {
+                width: 100%;
+                left: 0;
+            }
+            50% {
+                width: 100%;
+            }
+            100% {
+                width: 0%;
+                left: 100%;
+            }
+        }
+        
+        @keyframes top-op2 {
+            0% {
+                width: 100%;
+                left: 0;
+            }
+            50% {
+                width: 100%;
+            }
+            100% {
+                width: 0%;
+                left: 100%;
+            }
+        }
+        /* ここまでオープニングシャッター */
+        
+        .top {
+            height: 600px;
+            background-color: #474949;
+            background-image: url(img/S__16834571.png);
+            background-position: left top;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .top h1 {
+            color: white;
+            font-size: 60px;
+            padding-top: 100px;
+            text-align: center;
+            margin: 0;
+            opacity: 0.7;
+        }
+        
+        .profile-card {
+            position: absolute;
+            top: 370px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 750px;
+            height: 450px;
+            background-color: #fff;
+            border: 1px solid #c5c5c5;
+            filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, .2));
+        }
+        
+        .profile-card-title {
+            font-size: 30px;
+            padding-top: 10px;
+            text-align: center;
+            height: 55px;
+        }
+        
+        .profile-card-content {
+            margin-top: 20px;
+            display: flex;
+        }
+        
+        .profile-card-left {
+            height: 100%;
+            width: 45%;
+            text-align: center;
+        }
+        
+        .profile-card-img {
+            margin: 10px auto 0;
+            width: 60%;
+            height: 230px;
+            border: 1px solid #000;
+            background-size: cover;
+            background-image: url(img/C638C31F-8221-4210-8C3B-7E7D3C19102C.jpeg);
+        }
+        
+        .profile-card-right {
+            width: 60%;
+        }
+        
+        .profile-card-right-name {
+            width: 90%;
+            text-align: center;
+            font-weight: 400;
+            border-bottom: 3px solid #bebebe;
+        }
+        
+        .profile-card-right-content {
+            width: 90%;
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        .content {
+            margin: 180px auto 300px;
+            width: 600%;
+            max-width: 950px;
+        }
+        
+        .content-skill {
+            margin: 0 auto 300px;
+            text-align: center;
+            height: 55px;
+            width: 100%;
+        }
+        
+        .content-skill h3 {
+            font-size: 40px;
+        }
+        
+        .content-skill-list {
+            margin-top: 0;
+            margin-bottom: 80px;
+            display: flex;
+            justify-content: space-between;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+        }
+        
+        .skill-lang {
+            width: 48%;
+        }
+        
+        .skill-lang-content {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid #00a8cc;
+            border-radius: 1%;
+            background-color: #fff;
+        }
+        
+        .skill-lang-content h2 {
+            margin: 30px;
+        }
+        
+        .skill-framework {
+            width: 48%;
+        }
+        
+        .skill-framework-title {
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        .skill-framework-content {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid #00a8cc;
+            border-radius: 1%;
+            background-color: #fff;
+        }
+        
+        .skill-framework-content h2 {
+            margin: 30px;
+        }
+        
+        .footer {
+            padding: 60px 0;
+            background-color: #fff;
+            font-size: 20px;
+            text-align: center;
+        }

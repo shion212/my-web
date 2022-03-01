@@ -1,0 +1,184 @@
+/* スマホ向けレイアウト */
+
+@media all and (max-width: 760px) {
+    @media all and (max-width: 760px) {
+        .header-right {
+            display: none;
+        }
+        header {
+            padding: 30px 0;
+            height: 65px;
+            width: 100%;
+            background-color: white;
+        }
+        .menu-icon {
+            font-size: 25px;
+            margin: -10px 10px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 2;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            color: #fff;
+        }
+        .header-right {
+            position: fixed;
+            z-index: 1;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #8EB8FF;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity .3s linear;
+        }
+        .header-right a {
+            padding: .5em 1em;
+            text-align: center;
+            color: #fff;
+            font-size: 25px;
+        }
+        /* アニメーション後のメニューの状態 */
+        .header-right.is-active {
+            pointer-events: auto;
+            opacity: 1;
+        }
+        .top {
+            height: 400px;
+            background-color: #474949;
+            background-size: cover;
+            position: relative;
+        }
+        .top h1 {
+            color: #fff;
+            font-size: 40px;
+            text-align: center;
+        }
+        .profile-card {
+            position: absolute;
+            top: 370px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 90%;
+            height: 470px;
+            background-color: #fff;
+            border: 1px solid #c5c5c5;
+        }
+        .profile-card-title {
+            font-size: 20px;
+            padding-top: 5px;
+            text-align: center;
+        }
+        .profile-card-content {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .profile-card-left {
+            height: 100%;
+            width: 80%;
+            text-align: center;
+        }
+        .profile-card-img {
+            margin: 10px auto 0;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            background-size: cover;
+        }
+        .profile-card-right {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-card-right-name {
+            width: 90%;
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 400;
+            border-bottom: 1px solid #bebebe;
+        }
+        .profile-card-right-content {
+            width: 90%;
+            font-size: 16px;
+        }
+        .content {
+            margin: 0 auto 300px;
+            width: 100%;
+            max-width: 950px;
+        }
+        .content-skill {
+            margin-top: 400px;
+        }
+        .content-skill h3 {
+            font-size: 26px;
+        }
+        .content-skill-list {
+            margin-top: 0;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .skill-lang {
+            width: 80%;
+            font-size: 12px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .skill-lang-title {
+            width: 50%;
+            margin: -20px;
+        }
+        .skill-lang-content {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid #00a8cc;
+            border-radius: 1%;
+            background-color: #fff;
+            margin-top: -1px;
+        }
+        .skill-lang-content h2 {
+            margin: 15px;
+        }
+        .skill-framework {
+            width: 80%;
+            font-size: 12px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        .skill-framework-title {
+            width: 50%;
+            margin-top: -20px;
+        }
+        .skill-framework-content {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid #00a8cc;
+            border-radius: 1%;
+            background-color: #fff;
+        }
+        .skill-framework-content h2 {
+            margin: 15px;
+        }
+        .footer {
+            font-size: 15px;
+            text-align: center;
+            padding: 30px 0;
+        }
+    }
+}
